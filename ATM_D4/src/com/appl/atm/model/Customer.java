@@ -119,4 +119,7 @@ public abstract class Customer implements IAccount, Comparable<Customer> {
     public boolean isCustomer() {
        return true;
     }
+    
+    public abstract double getMaxWithdrawal();
+    public abstract double getMaxTransfer();
 }
