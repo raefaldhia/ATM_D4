@@ -54,6 +54,7 @@ public abstract class Customer implements IAccount, Comparable<Customer> {
       return totalBalance;
    }
    
+   @Override
    public int getAccountNumber() {
       return accountNumber;  
    }
@@ -66,6 +67,7 @@ public abstract class Customer implements IAccount, Comparable<Customer> {
       this.pin = newPin;
    }
 
+   @Override
    public int getPin() {
       return pin;
    }

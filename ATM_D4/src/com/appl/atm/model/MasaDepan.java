@@ -4,7 +4,7 @@ public class MasaDepan extends Customer {
     private double maxWithdrawal;
     private double maxTransfer;
 
-    public MasaDepan(int theAccountNumber, int thePIN, int theAvailableBalance, int theTotalBalance) {
+    public MasaDepan(int theAccountNumber, int thePIN, double theAvailableBalance, double theTotalBalance) {
         super(theAccountNumber, thePIN, theAvailableBalance, theTotalBalance);
     }
 
@@ -18,7 +18,7 @@ public class MasaDepan extends Customer {
     }
 
     @Override
-    public int getMaxTransfer() {
+    public double getMaxTransfer() {
         return maxTransfer;
     }
 

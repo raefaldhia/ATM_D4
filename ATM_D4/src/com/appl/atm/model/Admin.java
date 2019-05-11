@@ -1,10 +1,7 @@
 
 package com.appl.atm.model;
 
-import com.appl.atm.view.Screen;
-
-
-public class Admin {
+public class Admin implements IAccount {
    private int accountNumber; // indicates account involved
    private int pin;
    
@@ -17,6 +14,7 @@ public class Admin {
     /**
      * @return the accountNumber
      */
+    @Override
     public int getAccountNumber() {
         return accountNumber;
     }
@@ -31,6 +29,7 @@ public class Admin {
     /**
      * @return the pin
      */
+    @Override
     public int getPin() {
         return pin;
     }
