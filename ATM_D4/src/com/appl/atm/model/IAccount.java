@@ -8,4 +8,7 @@ public interface IAccount {
     public default boolean isCustomer() {
         return false;
     }
+
+    public int getAccountNumber();
+    public int getPin();
 }
