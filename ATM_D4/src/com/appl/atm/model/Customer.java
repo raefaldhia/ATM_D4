@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  * @author Rayhan Azka  <rayhan.azka.tif418@polban.ac.id>
  */
-public abstract class Customer implements Comparable<Customer> {   
+public abstract class Customer implements IAccount, Comparable<Customer> {   
    private int accountNumber; // account number
    private int pin; // PIN for authentication
    private double availableBalance; // funds available for withdrawal
@@ -113,5 +113,10 @@ public abstract class Customer implements Comparable<Customer> {
     @Override
     public int compareTo(Customer t) {
         return accountNumber - t.accountNumber;
+    }
+
+    @Override
+    public boolean isCustomer() {
+       return true;
     }
 }
