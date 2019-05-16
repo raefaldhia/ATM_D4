@@ -124,4 +124,17 @@ public abstract class Customer implements IAccount, Comparable<Customer> {
     
     public abstract double getMaxWithdrawal();
     public abstract double getMaxTransfer();
+
+    public void credit(double amount) {
+      try{
+         totalBalance += amount;
+      } catch(Exception e){
+            
+      }
+    }
+
+    public void debit(double amount) {
+      availableBalance -= amount;
+      totalBalance -= amount;
+    }
 }
